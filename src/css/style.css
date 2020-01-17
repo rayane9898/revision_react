@@ -8,4 +8,15 @@ h1 {
   padding: 10px;
 }
 
+.liNaviguation {
+  padding-right: 28vh;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+.liNaviguation:hover {
+  background-color: blue;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
