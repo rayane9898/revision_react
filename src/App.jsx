@@ -1,18 +1,19 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Header from "./compenents/Header";
-import Naviguation from "./compenents/Naviguation"
+import Naviguation from "./compenents/Naviguation";
+import Exercice1 from './compenents/Exercice1';
 
 
 
-function App() {
+
+const App = () => {
   return (
-    <div>
-      <Header/>
-      <Naviguation/>  
-    </div>
-  
+        <Fragment>
+          <Header/>
+          <Naviguation/>  
+          <Exercice1/>
+        </Fragment> 
   )
-
 }
 
 export default App;
