@@ -1,25 +1,30 @@
 import React, {useState} from "react";
 
-
 const Exercice3= () => {
-    const [titreH2,setTitreh2] = useState(' inconnu')
-    const click = (e) =>{
-        setTitreh2(e.target.previousElementSibling.value)
-        e.target.previousElementSibling.value = ""
+    const [titre, setTitre] = useState("")
+    const unePression = (e) =>{
+        // if (e.key ==='Enter') {
+        //     setTitre(e.target.value)  
+        // }
+        setTitre(e.target.previousElementSibling.value)
     }
 
     return(
         <section>
-            <h2>Welcome {titreH2}</h2>
+            <div className="container">
+            <h2>
+                Welcome {titre}
+            </h2>
             <p>
-                <span>écrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir</span>
-                <span>lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouter dans l'input sera alors mis dans le span du h2 et l'input sera alors vidé du tout contenu. Attention, interdictiond e toucher à 'html</span>
+                <span>Ecrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir</span>
+                <span>Lorsque vous cliquez sur le "go" le nom que vous avez ajouter dans l'input sera alors mis dans le span du h2 et l'input sera alors vidé de tout contenu. Attention Interdition de toucher à l'html</
+                span>
             </p>
-            <input type="text"/>
-            <button onClick={click}>go</button>
-        </section>
+            <input type="text" />
+            <button onClick={unePression}>go</button>
+            </div>
+        </section>  
+
     )
-}
-
-
+} 
 export default Exercice3

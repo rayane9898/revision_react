@@ -3,6 +3,7 @@ import Header from "./compenents/Header";
 import Naviguation from "./compenents/Naviguation";
 import Exercice1 from './compenents/Exercice1';
 import Exercice3 from './compenents/Exercice3';
+import Exercice4 from './compenents/Exercice4'
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
           <Naviguation/>  
           <Exercice1/>
           <Exercice3/>
+          <Exercice4/>
         </Fragment> 
   )
 }
